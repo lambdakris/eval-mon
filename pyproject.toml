@@ -1,0 +1,24 @@
+[project]
+name = "eval-mon"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "arize-phoenix[embeddings,evals,llama-index]>=7.6.0",
+    "deepeval>=2.1.6",
+    "gcsfs>=2024.12.0",
+    "httpx>=0.28.1",
+    "llama-index>=0.11.0",
+    "llama-index-llms-openai>=0.2.2",
+    "openai>=1.59.6",
+    "openinference-instrumentation-llama-index>=3.1.3",
+    "pydantic>=2.10.5",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.5",
+    "nest-asyncio>=1.6.0",
+]
